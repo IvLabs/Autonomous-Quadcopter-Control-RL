@@ -1,8 +1,3 @@
----
-title : "Drones - Reinforcement Learning "
-tags  : "IvLabs, RL, ReadMe"
----
-
 # Drone Obstacle Avoidance using RL
 
 This project attempts to use Reinforcement Learning to train a model to perform simple maneuvers, plan navigation and avoid dynamic obstacles
