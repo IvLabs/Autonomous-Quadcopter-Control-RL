@@ -1,6 +1,15 @@
+---
+title : "Drones - Reinforcement Learning "
+tags  : "IvLabs, RL, ReadMe"
+---
+
 # Drone Obstacle Avoidance using RL
 
 This project attempts to use Reinforcement Learning to train a model to perform simple maneuvers, plan navigation and avoid dynamic obstacles
+
+![](https://i.imgur.com/VBOywe3.gif)
+
+![](https://i.imgur.com/IeqSdOl.png)
 
 ## Current State of the Project
 
@@ -49,13 +58,11 @@ The models used in this project are from [``Stable Baseline3``](https://stable-b
 
 While using DDPG to train our model, we found that training the model using DDPG took a lot of time, i.e., it processed through the training episodes at a slow pace, and the results didn't look too promising.
 
-
-
 So we shifted to PPO.
 
 #### PPO
 
-We found that PPO had a better training speed than DDPG for the same number of time steps in the environment. The results weren't encouraging. So we increased the network size of the model from ``[32, 32]`` to ``[512, 512, 256, 128]`` and the larger neural network showed better results.
+We found that PPO had a better training speed than DDPG for the same number of time steps in the environment. The results weren't encouraging. So we increased the network size of the model from ``[32, 32]`` to ``[512, 512, 256, 128]`` and the larger neural network showed better results
 
 ## Tasks
 
@@ -75,7 +82,10 @@ reward = -1 * np.linalg.norm(np.array([0, 0, 1])-state[0:3])**2 #here state[0:3]
 
 #### Error Sphere
 
-Euclidean distance alone was not able to ensure that the agent moved towards the target location. So we added error spheres which basically give a different magnitude of rewards based on distance. This was done to ensure that the agent did not stray too far from the target location and maintained a stable hower near it.
+Euclidean distance alone was not able to ensure that the agent moved towards the target location. So we added error spheres which basically give a different magnitude of rewards based on distance. This was done to ensure that the agent did not stray too far from the target location and maintained a stable hover near it.
+
+![](https://i.imgur.com/fnIMMNH.gif)
+
 
 #### Reward based on Rotation
 
