@@ -1,13 +1,9 @@
----
-title : "Drones - Reinforcement Learning "
-tags  : "IvLabs, RL, ReadMe"
----
-
 # Drone Obstacle Avoidance using RL
 
 This project attempts to use Reinforcement Learning to train a model to perform simple maneuvers, plan navigation and avoid dynamic obstacles
-
-![](https://i.imgur.com/VBOywe3.gif)
+<p align="center">
+<img src="https://i.imgur.com/VBOywe3.gif" width="300" height="300" align="Center">
+</p>
 
 ![](https://i.imgur.com/IeqSdOl.png)
 
@@ -84,8 +80,9 @@ reward = -1 * np.linalg.norm(np.array([0, 0, 1])-state[0:3])**2 #here state[0:3]
 
 Euclidean distance alone was not able to ensure that the agent moved towards the target location. So we added error spheres which basically give a different magnitude of rewards based on distance. This was done to ensure that the agent did not stray too far from the target location and maintained a stable hover near it.
 
-![](https://i.imgur.com/fnIMMNH.gif)
-
+<p align="center">
+<img src="https://i.imgur.com/fnIMMNH.gif" width="300" height="300" align="Center">
+</p>
 
 #### Reward based on Rotation
 
