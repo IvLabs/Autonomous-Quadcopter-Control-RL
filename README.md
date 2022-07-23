@@ -1,15 +1,9 @@
----
-title : "Drones - Reinforcement Learning "
-tags  : "IvLabs, RL, ReadMe"
----
-
 # Drone Obstacle Avoidance using RL
 
 This project attempts to use Reinforcement Learning to train a model to perform simple maneuvers, plan navigation and avoid dynamic obstacles
 
 <p align="center">
-<img src="https://i.imgur.com/gmqkQMU.gif
-" width="400" height="300" align="Center">
+<img src="https://i.imgur.com/gmqkQMU.gif" width="400" height="300" align="Center">
 </p>
 
 ![](https://i.imgur.com/WA8DUG9.png)
@@ -113,16 +107,13 @@ The Error Sphere idea was not too successful in training the agent to move towar
 #### Results and Simulation
 
 <p align="center">
-<img src="https://i.imgur.com/YDinZwy.png
-" width="600" height="450" align="Center">
+<img src="https://i.imgur.com/YDinZwy.png" width="600" height="450" align="Center">
 </p>
 
 <p align="center">
-<img src="https://i.imgur.com/gmqkQMU.gif
-" width="400" height="300" align="Center">
+<img src="https://i.imgur.com/gmqkQMU.gif" width="400" height="300" align="Center">
 </p>
 
 <p align="center">
-<img src="https://i.imgur.com/yMnckDg.png
-" width="600" height="450" align="Center">
+<img src="https://i.imgur.com/yMnckDg.png" width="600" height="450" align="Center">
 </p>
