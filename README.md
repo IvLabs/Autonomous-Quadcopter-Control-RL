@@ -1,11 +1,18 @@
+---
+title : "Drones - Reinforcement Learning "
+tags  : "IvLabs, RL, ReadMe"
+---
+
 # Drone Obstacle Avoidance using RL
 
 This project attempts to use Reinforcement Learning to train a model to perform simple maneuvers, plan navigation and avoid dynamic obstacles
+
 <p align="center">
-<img src="https://i.imgur.com/VBOywe3.gif" width="300" height="300" align="Center">
+<img src="https://i.imgur.com/gmqkQMU.gif
+" width="400" height="300" align="Center">
 </p>
 
-![](https://i.imgur.com/IeqSdOl.png)
+![](https://i.imgur.com/WA8DUG9.png)
 
 ## Current State of the Project
 
@@ -91,3 +98,31 @@ The reward functions up till now only rewarded reaching the target location and 
 #### Exponential and Euclidean Distance Rewards
 
 The Error Sphere idea was not too successful in training the agent to move towards the target so we returned rewards by taking the exponential of the euclidean distance.
+
+<p align="center">
+<img src="https://i.imgur.com/VBOywe3.gif" width="300" height="300" align="Center">
+</p>
+
+![](https://i.imgur.com/IeqSdOl.png)
+
+
+### Results with Action Space ONE_D_RPM
+- We changed the action space of the environment to apply same action (RPM Value)to all four propellers.
+- After a training of 3,250,000 Million steps, the model was able to learn the task of hovering
+
+#### Results and Simulation
+
+<p align="center">
+<img src="https://i.imgur.com/YDinZwy.png
+" width="600" height="450" align="Center">
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/gmqkQMU.gif
+" width="400" height="300" align="Center">
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/yMnckDg.png
+" width="600" height="450" align="Center">
+</p>
